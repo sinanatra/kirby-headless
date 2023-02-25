@@ -1,0 +1,15 @@
+Icon
+.DS_Store
+/.editorconfig
+/CHANGELOG.md
+/package-lock.json
+/composer.lock
+/vendor
+/assets
+/kirby
+/media
+/site/plugins/
+/site/cache
+/site/accounts
+/site/sessions
+/site/config/.license
