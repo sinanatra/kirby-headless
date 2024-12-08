@@ -1,0 +1,18 @@
+name: field.blocks.image.name
+icon: image
+preview: image
+fields:
+  alt:
+    label: field.blocks.image.alt
+    type: text
+    icon: title
+  caption:
+    label: field.blocks.image.caption
+    type: writer
+    icon: text
+    inline: true
+  copyright:
+    label: Copyright
+    type: writer
+    icon: text
+    inline: true

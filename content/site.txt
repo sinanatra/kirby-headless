@@ -1,1 +1,21 @@
-Title: Site Title
+Title: aca-rh
+
+----
+
+Categories:
+
+- 
+  category: Default
+  color: '#F05056'
+
+----
+
+Tags: tag1, tag2, tag3
+
+----
+
+Descriptionseo: 
+
+----
+
+Imageseo: 

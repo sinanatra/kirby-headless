@@ -1,3 +1,84 @@
 title: Site
-preset: pages
-unlisted: true
+options:
+  preview: https://aca-rh.net/
+
+tabs:
+  project:
+    label: Projects
+    icon: file
+    columns:
+      - width: 1/2
+        sections:
+          publishedProject:
+            type: pages
+            headline: Publiziert
+            templates: project
+            status: listed
+            sortBy: title
+      - width: 1/2
+        sections:
+          draftsProject:
+            headline: Entwürfe
+            type: pages
+            status: draft
+            templates: project
+  metadata:
+    label: Tags
+    icon: file
+    columns:
+      - width: 1/1
+        sections:
+          tagsContainer:
+            type: fields
+            fields:
+              categories:
+                type: structure
+                label: Kategorien
+                fields:
+                  category:
+                    type: tags
+                    label: Kategorie
+                    max: 1
+                  color:
+                    type: colors
+                    label: Farbe
+                    editableAlpha: true
+                    default: "#F05056"
+                    presets: 
+                      - "#F05056"
+                      - "#C42CAD"
+                      - "#7401FA"
+                      - "#0101FA"
+                      - "#42B1E3"
+                      - "#31E097"
+                      - "#D2F417"
+              tags:
+                label: Tags
+                type: tags
+  highlight:
+    label: Colophon
+    icon: info
+    columns:
+      - width: 1/1
+        sections:
+          seoA:
+            type: fields
+            fields:
+              descriptionSEO:
+                type: markdown
+                label: Beschreibung für SEO
+                buttons: false
+                width: 1/2
+              imageSEO:
+                type: files
+                multiple: false
+                label: Bild für SEO
+                query: site.index.images
+                width: 1/2
+      - width: 1/2
+        sections:
+          colophon:
+            type: pages
+            headline: Weitere Seiten
+            template: page
+            sortBy: sort

@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: this is the caption of the image
+
+----
+
+Copyright: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: XNJgseo4KXY9ZWyX
+
+----
+
+Template: image
