@@ -65,7 +65,7 @@ tabs:
             type: fields
             fields:
               descriptionSEO:
-                type: markdown
+                type: textarea
                 label: Description for SEO
                 buttons: false
                 width: 1/2
