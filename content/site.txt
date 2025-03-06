@@ -1,0 +1,21 @@
+Title: Title
+
+----
+
+Categories:
+
+- 
+  category: Default
+  color: '#F05056'
+
+----
+
+Tags: 
+
+----
+
+Descriptionseo: 
+
+----
+
+Imageseo: 

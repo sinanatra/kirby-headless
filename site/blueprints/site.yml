@@ -1,6 +1,6 @@
 title: Site
 options:
-  preview: https://website.net/
+  # preview: https://website.net/
 
 tabs:
   project:
