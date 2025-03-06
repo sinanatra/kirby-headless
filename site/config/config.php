@@ -14,5 +14,6 @@ return [
       'allowHeaders' => '*',
       'maxAge' => '86400',
     ]
-  ]
+    ],
+    'debug'  => true,
 ];
