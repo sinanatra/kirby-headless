@@ -1,3 +1,84 @@
 title: Site
-preset: pages
-unlisted: true
+options:
+  preview: https://website.net/
+
+tabs:
+  project:
+    label: Projects
+    icon: file
+    columns:
+      - width: 1/2
+        sections:
+          publishedProject:
+            type: pages
+            headline: Published
+            templates: project
+            status: listed
+            sortBy: title
+      - width: 1/2
+        sections:
+          draftsProject:
+            headline: Drafts
+            type: pages
+            status: draft
+            templates: project
+  metadata:
+    label: Tags
+    icon: file
+    columns:
+      - width: 1/1
+        sections:
+          tagsContainer:
+            type: fields
+            fields:
+              categories:
+                type: structure
+                label: Categories
+                fields:
+                  category:
+                    type: tags
+                    label: Category
+                    max: 1
+                  color:
+                    type: colors
+                    label: Color
+                    editableAlpha: true
+                    default: "#F05056"
+                    presets: 
+                      - "#F05056"
+                      - "#C42CAD"
+                      - "#7401FA"
+                      - "#0101FA"
+                      - "#42B1E3"
+                      - "#31E097"
+                      - "#D2F417"
+              tags:
+                label: Tags
+                type: tags
+  highlight:
+    label: Colophon
+    icon: info
+    columns:
+      - width: 1/1
+        sections:
+          seoA:
+            type: fields
+            fields:
+              descriptionSEO:
+                type: markdown
+                label: Description for SEO
+                buttons: false
+                width: 1/2
+              imageSEO:
+                type: files
+                multiple: false
+                label: Image for SEO
+                query: site.index.images
+                width: 1/2
+      - width: 1/2
+        sections:
+          colophon:
+            type: pages
+            headline: Additional Pages
+            template: page
+            sortBy: sort
